@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#00000000">
+    <!--标题栏-->
+    <LinearLayout
+
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#00000000"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="110dp"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:text="聊天设置"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:onClick="to_friend_info"
+        android:id="@+id/RelativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/friend_avatar"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:civ_border_width="2dp"
+            app:civ_border_color="#00000000"
+            android:src="@drawable/avatar2"
+            android:layout_margin="10dp"/>
+
+        <TextView
+            android:id="@+id/friend_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_toRightOf="@id/friend_avatar"
+            android:layout_centerInParent="true"
+            android:text="李四"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+        <ImageView
+            android:id="@+id/into_friend"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/in" />
+    </RelativeLayout>
+
+    <Button
+        android:layout_marginTop="20dp"
+        android:id="@+id/delete_chat_record"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#ffffff"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="20dp"
+        android:text="删除聊天记录"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/RelativeLayout" />
+
+
+    <Button
+        android:layout_marginTop="0dp"
+        android:id="@+id/delete_friend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#ffffff"
+        android:gravity="center"
+        android:text="删除好友"
+        android:textColor="#FF0000"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/delete_chat_record" />
+
+    <TextView
+        android:id="@+id/report_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="120dp"
+        android:gravity="center"
+        android:text="被骚扰了？举报该用户"
+        android:textColor="#0000FF"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/delete_friend"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+    </LinearLayout>

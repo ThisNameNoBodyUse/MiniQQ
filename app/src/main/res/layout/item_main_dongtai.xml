@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:padding="10dp">
+
+    <!--创建一个ImageView，用于显示图标，id为icon-->
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/icon"
+        app:civ_border_width="2dp"
+        app:civ_border_color="#00000000"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/ic_launcher_background" />
+
+    <!--创建一个TextView，用于显示文本，id为dongtai_items-->
+    <TextView
+        android:id="@+id/dongtai_items"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="10dp"
+        android:text="Text View"
+        android:textSize="18sp" />
+</LinearLayout>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:requestLegacyExternalStorage="true"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/qq1"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Pretend_QQ"
+        tools:targetApi="31">
+        <activity
+            android:name="Activity.Friend_Detail_Activity"
+            android:exported="false" />
+        <activity
+            android:name="Activity.Friend_Info_Activity"
+            android:exported="false" />
+        <activity
+            android:name="Activity.Revise_username_Activity"
+            android:exported="false" />
+        <activity
+            android:name="Activity.Revise_Birthday_Activity"
+            android:exported="false" />
+        <activity
+            android:name="Activity.Revise_Signature_Activity"
+            android:exported="false" />
+        <activity
+            android:name="Activity.ViewAvatarActivity"
+            android:exported="false" />
+        <activity
+            android:name="Activity.Revise_Avatar_Activity"
+            android:exported="false" />
+        <activity
+            android:name="Activity.Revise_Message_Activity"
+            android:exported="false" />
+        <activity
+            android:name="Activity.Cancel_Account_Activity"
+            android:exported="false" />
+        <activity
+            android:name="Activity.Main_to_RevisePassword_Activity"
+            android:exported="false" />
+        <activity
+            android:name="Activity.Account_Safe_Activity"
+            android:exported="false" />
+        <activity
+            android:name="Activity.Account_Control_Activity"
+            android:exported="false" />
+        <activity
+            android:name="Activity.SettingActivity_Third"
+            android:exported="false" />
+        <activity
+            android:name="Activity.Main_Info"
+            android:exported="false" />
+        <activity
+            android:name="Activity.ChatRecordActivity"
+            android:exported="false" />
+        <activity
+            android:name="Activity.GraphActivity"
+            android:exported="false" />
+        <activity
+            android:name="Activity.SayActivity"
+            android:exported="false" />
+        <activity
+            android:name="Activity.DongtaiActivity"
+            android:exported="false" />
+        <activity
+            android:name="Activity.SearchActivity"
+            android:exported="false" />
+        <activity
+            android:name="Activity.MainActivity_Second"
+            android:windowSoftInputMode="adjustPan"
+            android:exported="false" />
+        <activity
+            android:name="Activity.Revise_passwordActivity"
+            android:exported="false" />
+        <activity
+            android:name="Activity.Back_passwordActivity"
+            android:exported="false" />
+        <activity
+            android:name="Activity.RegisterActivity_Second"
+            android:windowSoftInputMode="adjustPan"
+            android:exported="false" />
+        <activity
+            android:name="Activity.SettingActivity_Second"
+            android:exported="false" />
+        <activity
+            android:name="Activity.LoginActivity_Second"
+            android:exported="true"
+            android:theme="@style/Theme.CustomSplashScreenTheme" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+
+        <activity
+            android:name="Activity.ChatActivity"
+            android:exported="false" />
+        <activity
+            android:name="Activity.UserInfoActivity"
+            android:exported="false" />
+    </application>
+
+</manifest>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- 返回图标 -->
+    <ImageView
+        android:id="@+id/back_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="10dp"
+        android:src="@drawable/back1"/>
+    <ImageView
+        android:id="@+id/save_avatar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:src="@mipmap/save"/>
+
+    <!-- 头像 -->
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/avatar"
+        app:civ_border_color="#00000000"
+        app:civ_border_width="2dp"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/avatar4"/>
+
+    <!-- 选择菜单 -->
+    <LinearLayout
+        android:id="@+id/menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <!-- 查看头像 -->
+        <TextView
+            android:id="@+id/view_avatar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="查看头像"
+            android:textColor="#000000"
+            android:textSize="18sp"/>
+
+        <!-- 从相册选择 -->
+        <TextView
+            android:id="@+id/select_from_gallery"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="从相册选择"
+            android:textColor="#000000"
+            android:textSize="18sp"/>
+
+        <!-- 取消 -->
+        <TextView
+            android:id="@+id/cancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="取消"
+            android:textColor="#000000"
+            android:textSize="18sp"/>
+    </LinearLayout>
+</RelativeLayout>

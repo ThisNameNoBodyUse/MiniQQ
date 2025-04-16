@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Pretend_QQ</string>
+    <string-array name="dongtai_items">
+        <item>好友动态</item>
+        <item>游戏中心</item>
+        <item>结伴</item>
+        <item>附近</item>
+        <item>鹅毛市集</item>
+        <item>集卡</item>
+        <item>直播</item>
+        <item>动漫</item>
+        <item>阅读</item>
+        <item>购物</item>
+        <item>音乐</item>
+        <item>运动</item>
+    </string-array>
+
+
+</resources>
