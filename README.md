@@ -22,6 +22,36 @@
 - **开发工具**：Android Studio
 - **界面布局**：XML + 原生控件
 
+## 📷 部分界面预览
+
+#### 登录界面  
+![](screenshots/login.jpg)
+
+#### QQ主界面  
+![](screenshots/main_interface.jpg)
+
+| 注册界面 | 忘记密码界面 |
+|----------|-------------|
+| ![](screenshots/register.jpg) | ![](screenshots/forgot_password.jpg) |
+
+| 联系人界面 | 动态列表界面 |
+|-------------|---------------|
+| ![](screenshots/contacts.jpg) | ![](screenshots/moments.jpg) |
+
+| 聊天界面 | 账号安全界面 |
+|-------------|---------------|
+| ![](screenshots/chat.jpg) | ![](screenshots/account_security.jpg) |
+
+| 修改密码界面 | 注销账号界面 |
+|----------------|------------------|
+| ![](screenshots/change_password.jpg) | ![](screenshots/logout.jpg) |
+
+| 好友信息界面 | 添加好友界面 |
+|----------------|------------------|
+| ![](screenshots/friend_info.jpg) | ![](screenshots/add_friend.jpg) |
+
+
+
 ## 🚀 快速开始
 
 项目不依赖任何外部服务，下载即可运行：
@@ -31,3 +61,4 @@
 1. 克隆项目：
    ```bash
    git clone https://github.com/ThisNameNoBodyUse/MiniQQ.git
+   ```
